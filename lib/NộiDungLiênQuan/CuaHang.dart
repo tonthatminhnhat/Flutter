@@ -41,7 +41,7 @@ class LichSuAoDai extends StatelessWidget{
                   const Text("   Trang chủ > Nhà may truyền thống" ,style: TextStyle(fontSize:13,fontWeight: FontWeight.w300,
                     color: Colors.grey,)),
                   const SizedBox(height:15),
-                  const Text('Nghề may áo dài xứ Huế'
+                  const Text('Những tiệm may áo dài lâu đời nhất ở Huế'
                       ,style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,

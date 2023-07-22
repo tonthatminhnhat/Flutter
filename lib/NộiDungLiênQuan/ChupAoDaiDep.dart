@@ -41,7 +41,7 @@ class LichSuAoDai extends StatelessWidget{
                   const Text("   Trang chủ > Nội dung liên quan" ,style: TextStyle(fontSize:13,fontWeight: FontWeight.w300,
                     color: Colors.grey,)),
                   const SizedBox(height:15),
-                  const Text('Mách bạn 10 địa điểm chụp áo dài đẹp ở Huế'
+                  const Text('Mách bạn những địa điểm chụp áo dài đẹp ở Huế'
                       ,style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,

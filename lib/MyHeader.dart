@@ -7,7 +7,7 @@ class MyHeader extends StatelessWidget {
       Container(
           width:1600,
           color: Colors.purple.shade50,
-          padding:  const EdgeInsets.symmetric(vertical: 5,horizontal: 150),
+          padding:  const EdgeInsets.symmetric(vertical: 5,horizontal: 170),
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -21,7 +21,7 @@ class MyHeader extends StatelessWidget {
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
-                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)
                       ),
@@ -35,7 +35,7 @@ class MyHeader extends StatelessWidget {
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
-                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)
                       ),
@@ -49,7 +49,7 @@ class MyHeader extends StatelessWidget {
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
-                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)
                       ),
@@ -58,7 +58,7 @@ class MyHeader extends StatelessWidget {
                         ,fontWeight: FontWeight.w600))
                 ),
                  InkWell(
-                     onTap:()=> _launchURL('https://baotanglichsu.vn/vi/Articles/3096/18303/trang-phuc-cung-djinh-trieu-nguyen.html'),
+                     onTap:()=> _launchURL('http://localhost:64576/#/'),
                    // mouseCursor:SystemMouseCursors.click,
                     child: Card(
                     margin: EdgeInsets.only(left: 20,right: 20),
@@ -79,12 +79,12 @@ class MyHeader extends StatelessWidget {
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
-                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)
                       ),
                     ),
-                    child: const Text('Áo dài ngũ thân',style: TextStyle(fontSize: 14
+                    child: const Text('Áo dài Ngũ Thân',style: TextStyle(fontSize: 14
                         ,fontWeight: FontWeight.w600))
                 ),
                 TextButton(
@@ -93,12 +93,12 @@ class MyHeader extends StatelessWidget {
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
-                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)
                       ),
                     ),
-                    child: const Text('Chiêm ngưỡng ‘tuyệt phẩm’ Long bào',style: TextStyle(fontSize: 14
+                    child: const Text('Áo Nhật Bình',style: TextStyle(fontSize: 14
                         ,fontWeight: FontWeight.w600))
                 ),
                 TextButton(
@@ -107,12 +107,12 @@ class MyHeader extends StatelessWidget {
                   },
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.purple.shade400,
-                    padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 14),
+                    padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)
                     ),
                   ),
-                  child: const Text('Nhà may Truyền Thống',style: TextStyle(fontSize: 14
+                  child: const Text('Chiêm ngưỡng ‘tuyệt phẩm’ Long bào',style: TextStyle(fontSize: 14
                       ,fontWeight: FontWeight.w600)),
 
                 ),

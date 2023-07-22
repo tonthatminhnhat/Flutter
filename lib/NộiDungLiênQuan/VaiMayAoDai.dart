@@ -41,7 +41,7 @@ class LichSuAoDai extends StatelessWidget{
                   const Text("   Trang chủ > Nội dung liên quan" ,style: TextStyle(fontSize:13,fontWeight: FontWeight.w300,
                     color: Colors.grey,)),
                   const SizedBox(height:15),
-                  const Text('Top 10 loại vải may áo dài đẹp, sang trọng, được ưa chuộng nhất'
+                  const Text('Các loại vải may áo dài đẹp, sang trọng và được ưa chuộng nhất'
                       ,style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
