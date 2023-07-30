@@ -3,6 +3,7 @@ import 'MyFinal.dart';
 import 'MyHeader.dart';
 void main() {
   runApp(MaterialApp(
+    title:'Trang phục Cố Đô',
     home: SafeArea(
         child: Scaffold(
             // resizeToAvoidBottomInset:false,

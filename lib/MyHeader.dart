@@ -58,7 +58,13 @@ class MyHeader extends StatelessWidget {
                         ,fontWeight: FontWeight.w600))
                 ),
                  InkWell(
-                     onTap:()=> _launchURL('http://localhost:64576/#/'),
+                     // onTap:(){
+                     //   Navigator.push(
+                     //       context,
+                     //       MaterialPageRoute(builder: (context) => TrangChu()),
+                     //   );
+                     // },
+                     onTap:()=> _launchURL('fdsfsfs'),
                    // mouseCursor:SystemMouseCursors.click,
                     child: Card(
                     margin: EdgeInsets.only(left: 20,right: 20),
