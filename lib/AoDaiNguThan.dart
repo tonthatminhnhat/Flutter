@@ -1,30 +1,17 @@
 import 'package:flutter/material.dart';
 import 'MyFinal.dart';
 import 'MyHeader.dart';
-void main() {
-  runApp(MaterialApp(
-    home: SafeArea(
-      child: Scaffold(
-        // resizeToAvoidBottomInset:false,
-        body: SingleChildScrollView(
-          child: Column(
-              children:[
-                MyHeader(),
-                Trangchu(),
-                MyFinal(),
-              ]
-          ),
-        ),
-      ),
-    ),
-    debugShowCheckedModeBanner: false,
-  )
-  );
-}
 
-class Trangchu extends StatelessWidget {
+
+class AoDaiNguThan extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Scaffold(
+          body:SingleChildScrollView(
+          child: Column(
+          children:[
+          MyHeader(),
+            Container(
         width: 1200,
         color: Colors.white38,
         padding:const EdgeInsets.symmetric(vertical: 15),
@@ -79,7 +66,7 @@ class Trangchu extends StatelessWidget {
                       const SizedBox(height:20),
                       RichText(textAlign:TextAlign.justify,
                           text: TextSpan(
-                              style:DefaultTextStyle.of(context).style,
+                              style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
 
                               children:const <TextSpan>[
                                 TextSpan(text:'      Áo ngũ thân nam được thiết kế với phần cổ cao, thẳng và vuông nhằm tượng trưng cho sự chính trực của đấng quân tử. '
@@ -186,7 +173,7 @@ class Trangchu extends StatelessWidget {
                       const SizedBox(height:20),
                       RichText(textAlign:TextAlign.justify,
                           text: TextSpan(
-                              style:DefaultTextStyle.of(context).style,
+                              style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                               children:const <TextSpan>[
                                 TextSpan(text:'      Tương truyền rằng'
                                     ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
@@ -212,7 +199,8 @@ class Trangchu extends StatelessWidget {
                       const SizedBox(height:20),
                       RichText(textAlign:TextAlign.justify,
                           text: TextSpan(
-                              style:DefaultTextStyle.of(context).style,
+                              style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                               children:const <TextSpan>[
                                 TextSpan(text:'      Bộ áo '
                                     ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
@@ -243,7 +231,8 @@ class Trangchu extends StatelessWidget {
                       const SizedBox(height:20),
                       RichText(textAlign:TextAlign.justify,
                           text: TextSpan(
-                              style:DefaultTextStyle.of(context).style,
+                              style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                               children:const <TextSpan>[
                                 TextSpan(text:'      Trải qua nhiều thăng trầm lịch sử, áo ngũ thân đang dần mờ nhạt và ít thịnh hành. Hiện nay mẫu áo này chỉ xuất hiện ở Huế với một số nghệ nhân, thợ may biết',
                                     style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
@@ -388,6 +377,10 @@ class Trangchu extends StatelessWidget {
               ]
           ),
         )
-    );
+    ),
+            MyFinal()
+          ]),
+          )
+      );
   }
 }

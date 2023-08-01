@@ -1,30 +1,17 @@
 import 'package:flutter/material.dart';
 import 'MyFinal.dart';
 import 'MyHeader.dart';
-void main() {
-  runApp(MaterialApp(
-    home: SafeArea(
-      child: Scaffold(
-        // resizeToAvoidBottomInset:false,
-        body: SingleChildScrollView(
-          child: Column(
-              children:[
-                MyHeader(),
-                LichSuAoDai(),
-                MyFinal(),
-              ]
-          ),
-        ),
-      ),
-    ),
-    debugShowCheckedModeBanner: false,
-  )
-  );
-}
-class LichSuAoDai extends StatelessWidget{
+
+class LeHoiAoDai extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Scaffold(
+          body:SingleChildScrollView(
+          child: Column(
+          children:[
+          MyHeader(),
+           Container(
       width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -59,7 +46,7 @@ class LichSuAoDai extends StatelessWidget{
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Tuần lễ Áo dài cộng đồng Huế được tổ chức nhằm khai thác thế mạnh, thương hiệu và giá trị văn hóa độc đáo của Áo dài Huế, xây dựng hình ảnh du lịch Huế gắn với Áo dài, kích cầu du lịch phát triển. Đồng thời, tôn vinh Áo dài Huế, Áo dài Việt Nam, khẳng định thương hiệu “Huế - Kinh đô Áo dài”, góp phần tuyên truyền quảng bá văn hóa Huế gắn với quảng bá, xúc tiến về du lịch. Hoạt động này cũng từng bước triển khai có hiệu quả Đề án “Huế - Kinh đô Áo dài”.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -79,7 +66,7 @@ class LichSuAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Tuần lễ Áo dài cộng đồng Huế sẽ tổ chức chuỗi hoạt động tri ân, quảng diễn, trình diễn Áo dài Huế, hoạt động biểu diễn nghệ thuật, kết hợp với các hình thức tuyên truyền, quảng bá, tôn vinh hình ảnh Áo dài; khuyến khích, huy động sự tham gia, hưởng ứng của cộng đồng khi tham gia Tuần lễ Áo dài cộng đồng Huế.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +84,7 @@ class LichSuAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Tuần lễ Áo dài cộng đồng Huế còn có hoạt động cộng đồng với chủ đề “Áo dài và không gian thao diễn” như tổ chức không gian trưng bày, thao diễn nghề may Áo dài, nghề nón lá Huế ; Chương trình nghệ thuật “Áo dài và dân gian đất Bắc”; Tọa đàm với chủ đề "Áo dài và giới trẻ" dành cho các bạn học sinh, sinh viên nhằm truyền cảm hứng và định hướng cho giới trẻ; Tổ chức Cuộc thi tìm hiểu “Áo dài Huế” ; Tổ chức chương trình “Áo dài và di sản” tại Quốc Tử Giám Huế.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -134,7 +121,7 @@ class LichSuAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Tuần lễ Áo dài cộng đồng Huế cũng sẽ diễn ra hội thảo với chủ đề “Hướng phát triển của Áo dài Huế trong đời sống đương đại”. Hội thảo sẽ có sự tham dự của những chuyên gia, nhà nghiên cứu, nhà thiết kế, nghệ nhân có uy tín nhằm đề xuất những giải pháp, hướng đi cho việc phát triển áo dài Huế trong đời sống đương đại tại Sở Văn hóa và Thể thao.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -199,90 +186,228 @@ class LichSuAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Lễ Festival là cơ hội vàng để cho mọi người được tinh hoa văn hóa cố đô, hãy nhớ du lịch Huế vào dịp này và đừng quên mặc thử một bộ áo dài nhé ! '
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
                   const SizedBox(height:20),
 
                 ],
               ),
             ),
-            Column(
-              children: [
-                Container(
-                  margin: const EdgeInsets.only(bottom:20,top: 35),
-                  width: 330,padding:const EdgeInsets.only(bottom:18,left:10),
-                  decoration: const BoxDecoration(
-                      border:Border(
-                          bottom: BorderSide(
-                              color:Colors.black54,width:3)
-                      )
+//NoiDungLienQuan
+            Container(color:Colors.white38,
+              child: Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(bottom:20,top: 43),
+                    width: 330,padding:const EdgeInsets.only(bottom:10,left:10),
+                    decoration: const BoxDecoration(
+                        border:Border(
+                            bottom: BorderSide(
+                                color:Colors.black54,width:3)
+                        )
+                    ),
+                    child: const Text('Bài viết mới nhất',
+                        style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,
+                            color:Color(0xFF424242))),
                   ),
-                  child: const Text('Nội dung liên quan',
-                      style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,
-                          color:Color(0xFF424242))),
-                ),
-                Container(height: 100,width: 330,
-                  padding:const EdgeInsets.only(top:10,bottom: 10,),
-                  child: Row(
+                  Container(height: 80,width: 330,
+                    padding:const EdgeInsets.only(top:5,bottom: 5,),
+                    child: Row(
+                      children: [
+                        Container(
+                            width:2.5,color:Colors.black54,
+                            margin:const EdgeInsets.only(right: 15)
+                        ),
+                        Container(
+                          clipBehavior: Clip.hardEdge,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+                          child: Image.asset(
+                            'image/nenmacaodai/4.jpg',
+                            height:70,width: 70,fit:BoxFit.cover,),
+                        ),
+                        Container( height: 90,width: 230,
+                          padding: const EdgeInsets.only(left:10,bottom: 5),
+                          child: const Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment:MainAxisAlignment.center,
+                            children: [Text('Nên mặc áo dài trong dịp nào là thích hợp nhất'
+                              ,style: TextStyle(
+                                fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                                height: 1.4,
+                              ),),
+                            ],
+                          ),
+                        )
+
+                      ],),
+                  ),
+                  Column(
                     children: [
                       Container(
-                          width:2.5,color:Colors.black54,
-                          margin:const EdgeInsets.only(right: 14)
-                      ),
-                      Container(
-                        clipBehavior: Clip.hardEdge,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)
+                        margin: const EdgeInsets.only(bottom:20,top: 20),
+                        width: 330,padding:const EdgeInsets.only(bottom:10,left:10),
+                        decoration: const BoxDecoration(
+                            border:Border(
+                                bottom: BorderSide(
+                                    color:Colors.black54,width:3)
+                            )
                         ),
-                        child: Image.asset(
-                          'image/nenmacaodai/4.jpg',
-                          height:80,width: 80,fit:BoxFit.cover,),
+                        child: const Text('Nội dung liên quan',
+                            style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,
+                                color:Color(0xFF424242))),
                       ),
-                      Container( height: 100,width: 230,
-                        padding: const EdgeInsets.only(left:10,top:5,),
-                        child: const Text('Nên mặc áo dài trong dịp nào là thích hợp nhất là thích hợp nhất'
-                            ' là thích ',style: TextStyle(
-                          fontSize:16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                          height: 1.4,
-                        ),),
-                      )
+                      // ====================
+                      Container(height: 70,width: 330,
+                        margin:const EdgeInsets.only(top:10,bottom: 10,),
+                        child: Row(
+                          children: [
+                            Container(
+                                width:2.5,color:Colors.black54,
+                                margin:const EdgeInsets.only(right: 15)
+                            ),
+                            Container(
+                              clipBehavior: Clip.hardEdge,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)
+                              ),
+                              child: Image.asset(
+                                'image/VaiMay/1.jpg',
+                                height:70,width: 70,fit:BoxFit.cover,),
+                            ),
+                            Container( height: 90,width: 230,
+                              padding: const EdgeInsets.only(left:10,bottom: 5),
+                              child: const Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:MainAxisAlignment.center,
+                                children: [Text('Các loại vải may áo dài đẹp, sang trọng và được ưa chuộng nhất'
+                                    ,style: TextStyle(
+                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                                      height: 1.4,
+                                    )),
+                                ],
+                              ),
+                            )
 
-                    ],),
-                ),
-                Container(height: 100,width: 330,
-                  padding:const EdgeInsets.only(top:10,bottom: 10,),
-                  child: Row(
-                    children: [
-                      Container(
-                          width:2.5,color:Colors.black54,
-                          margin:const EdgeInsets.only(right: 14)
+                          ],),
                       ),
-                      Container(
-                        clipBehavior: Clip.hardEdge,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)
-                        ),
-                        child: Image.asset(
-                          'image/nenmacaodai/4.jpg',
-                          height:80,width: 80,fit:BoxFit.cover,),
-                      ),
-                      Container( height: 100,width: 230,
-                        padding: const EdgeInsets.only(left:10,top:5,),
-                        child: const Text('Các loại vải thường dùng để may áo dài đẹp',
-                          style: TextStyle(
-                            fontSize:16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                            height: 1.4,
-                          ),),
-                      )
+                      Container(height: 70,width: 330,
+                        margin:const EdgeInsets.only(top:10,bottom: 10,),
+                        child: Row(
+                          children: [
+                            Container(
+                                width:2.5,color:Colors.black54,
+                                margin:const EdgeInsets.only(right: 15)
+                            ),
+                            Container(
+                              clipBehavior: Clip.hardEdge,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)
+                              ),
+                              child: Image.asset(
+                                'image/CuaHang/1.jpg',
+                                height:70,width: 70,fit:BoxFit.cover,),
+                            ),
+                            Container( height: 90,width: 230,
+                              padding: const EdgeInsets.only(left:10,bottom: 5),
+                              child: const Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:MainAxisAlignment.center,
+                                children: [Text('Những tiệm may áo dài lâu đời nhất ở Huế'
+                                    ,style: TextStyle(
+                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                                      height: 1.4,
+                                    )),
+                                ],
+                              ),
+                            )
 
-                    ],),
-                ),
-              ],
+                          ],),
+                      ),
+                      Container(height: 70,width: 330,
+                        margin:const EdgeInsets.only(top:10,bottom: 10,),
+                        child: Row(
+                          children: [
+                            Container(
+                                width:2.5,color:Colors.black54,
+                                margin:const EdgeInsets.only(right: 15)
+                            ),
+                            Container(
+                              clipBehavior: Clip.hardEdge,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)
+                              ),
+                              child: Image.asset(
+                                'image/ChupAnhAD/5.jpg',
+                                height:70,width: 70,fit:BoxFit.cover,),
+                            ),
+                            Container( height: 90,width: 230,
+                              padding: const EdgeInsets.only(left:10,bottom: 5),
+                              child: const Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:MainAxisAlignment.center,
+                                children: [Text('Mách bạn những địa điểm chụp áo dài đẹp ở Huế'
+                                    ,style: TextStyle(
+                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                                      height: 1.4,
+                                    )),
+                                ],
+                              ),
+                            )
+
+                          ],),
+                      ),
+                      Container(height: 70,width: 330,
+                        margin:const EdgeInsets.only(top:10,bottom: 10,),
+                        child: Row(
+                          children: [
+                            Container(
+                                width:2.5,color:Colors.black54,
+                                margin:const EdgeInsets.only(right: 15)
+                            ),
+                            Container(
+                              clipBehavior: Clip.hardEdge,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)
+                              ),
+                              child: Image.asset(
+                                'image/PhuKien/1.jpg',
+                                height:70,width: 70,fit:BoxFit.cover,),
+                            ),
+                            Container( height: 90,width: 230,
+                              padding: const EdgeInsets.only(left:10,bottom: 5),
+                              child: const Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:MainAxisAlignment.center,
+                                children: [Text('Gợi ý những món đồ phụ kiện giúp bạn tỏa sáng khi diện áo dài'
+                                    ,style: TextStyle(
+                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                                      height: 1.4,
+                                    )),
+                                ],
+                              ),
+                            )
+
+                          ],),
+                      ),
+
+
+
+                    ],
+                  ),
+
+                ],
+              ),
             )
           ],
 
         ),
       ),
-    );
+    ),
+            MyFinal()
+          ]),
+          )
+      );
   }
 
 }

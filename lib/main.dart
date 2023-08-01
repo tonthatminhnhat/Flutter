@@ -1,51 +1,100 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter_01/page1.dart';
-import 'package:flutter_01/page2.dart';
-void main(){
-  runApp(MyApp());
+void main() {
+runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Your App',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => HomePage(), // Trang chủ
-        '/page1': (context) => Page1(), // Đường dẫn tới Page1
-        '/page2': (context) => Page2(), // Đường dẫn tới Page2
-      },
-    );
-  }
+@override
+Widget build(BuildContext context) {
+return MaterialApp(
+title: 'Ví dụ Fade Transition',
+theme: ThemeData(
+primarySwatch: Colors.blue,
+),
+initialRoute: '/',
+routes: {
+'/': (context) => TrangChu(),
+'/second': (context) => TrangHai(),
+},
+);
+}
 }
 
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              child: Text('Go to Page 1'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/page1'); // Điều hướng đến Page1
-              },
-            ),
-            ElevatedButton(
-              child: Text('Go to Page 2'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/page2'); // Điều hướng đến Page2
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+class TrangChu extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return Scaffold(
+appBar: AppBar(title: Text('Trang chủ')),
+body: Center(
+child: Column(
+mainAxisAlignment: MainAxisAlignment.center,
+children: [
+Text('Trang chủ', style: TextStyle(fontSize: 24)),
+SizedBox(height: 20),
+TextButton(
+onPressed: () {
+Navigator.pushNamed(context, '/second');
+},
+child:
+Text('Chuyển đến trang thứ hai', style:
+TextStyle(color:
+Colors.white)),
+style:
+ButtonStyle(backgroundColor:
+MaterialStateProperty.all>(
+Colors.blue)),
+),
+],
+),
+),
+);
+}
+}
+
+class TrangHai extends StatelessWidget {
+
+final Duration duration = Duration(seconds :2);
+
+@override
+Widget build(BuildContext context) {
+
+return Scaffold(
+
+appBar : AppBar(title :Text("Trang hai")),
+body :Center(
+
+child :Column(
+
+mainAxisAlignment :MainAxisAlignment.center,
+
+children:<Widget>[
+
+FadeTransition(
+
+opacity :Tween>(begin :0, end :1).animate(
+
+CurvedAnimation(
+
+parent: ModalRoute.of(context)!.animation!,
+
+curve: Curves.easeIn,
+
+),
+
+),
+
+child :Container(
+
+width: 200,
+height: 200,
+color: Colors.blue,
+
+),
+),
+],
+),
+),
+);
+}
 }

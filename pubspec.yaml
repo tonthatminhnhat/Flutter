@@ -36,6 +36,7 @@ dependencies:
   url_launcher: ^6.1.11
   youtube_player_flutter: ^8.1.2
   youtube_player_iframe: ^4.0.4
+  page_transition: ^2.0.9
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -2,30 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import '../MyFinal.dart';
 import '../MyHeader.dart';
-void main() {
-  runApp(MaterialApp(
-    home: SafeArea(
-      child: Scaffold(
-        // resizeToAvoidBottomInset:false,
-        body: SingleChildScrollView(
-          child: Column(
-              children:[
-                MyHeader(),
-                LichSuAoDai(),
-                MyFinal(),
-              ]
-          ),
-        ),
-      ),
-    ),
-    debugShowCheckedModeBanner: false,
-  )
-  );
-}
-class LichSuAoDai extends StatelessWidget{
+class AoNhatBinh extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Scaffold(
+          body:SingleChildScrollView(
+          child: Column(
+          children:[
+          MyHeader(),
+      Container(
       width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -97,7 +83,7 @@ class LichSuAoDai extends StatelessWidget{
                     children: [
                       Column(
                           children:[
-                            Image.asset(fit:BoxFit.cover,width:650,
+                            Image.asset(fit:BoxFit.cover,width:400,
                                 'image/AoNhatBinh/3.jpg'),
                           ]
                       ),
@@ -278,7 +264,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      - Cấp cung tần nhị giai:'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -294,7 +281,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      - Cấp cung tần tam giai:'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -310,7 +298,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      - Cấp cung tứ giai: '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -341,7 +330,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      Áo Nhật Bình và Phi Phong có khác nhau không '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -354,7 +344,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      - Về nguồn gốc: '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -367,7 +358,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      - Về  kết cấu may mặc: '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -402,7 +394,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      Làm sao để phân biệt áo Nhật Bình với áo Phi Phong? '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -447,7 +440,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      Vậy nên gọi “áo Nhật Bình cách tân” sao cho chuẩn '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -467,7 +461,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'      Chất liệu của áo Nhật Bình '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -499,7 +494,8 @@ class LichSuAoDai extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
+
                           children:const <TextSpan>[
                             TextSpan(text:'     Tuy được thiết kế dựa theo nguyên mẫu áo Phi Phong nhưng'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5)),
@@ -718,6 +714,10 @@ class LichSuAoDai extends StatelessWidget{
           ],
         ),
       ),
+    ),
+              MyFinal()
+          ]),
+    )
     );
   }
 

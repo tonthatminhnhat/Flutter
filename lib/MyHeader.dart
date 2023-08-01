@@ -17,7 +17,7 @@ class MyHeader extends StatelessWidget {
               children: [
                 TextButton(
                     onPressed: (){
-                      print('da kik thanh cong');
+                      Navigator.of(context).pushNamed('/TrangPhucCungDinh');
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
@@ -31,7 +31,7 @@ class MyHeader extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: (){
-                      print('da kik thanh cong');
+                      Navigator.of(context).pushNamed('/LichSuAoDai');
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
@@ -45,7 +45,7 @@ class MyHeader extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: (){
-                      print('da kik thanh cong');
+                      Navigator.of(context).pushNamed('/LeHoiAoDai');
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
@@ -64,7 +64,7 @@ class MyHeader extends StatelessWidget {
                      //       MaterialPageRoute(builder: (context) => TrangChu()),
                      //   );
                      // },
-                     onTap:()=> _launchURL('fdsfsfs'),
+                     onTap:()=> Navigator.of(context).pushNamed('/TrangChu'),
                    // mouseCursor:SystemMouseCursors.click,
                     child: Card(
                     margin: EdgeInsets.only(left: 20,right: 20),
@@ -81,7 +81,7 @@ class MyHeader extends StatelessWidget {
                  ),
                 TextButton(
                     onPressed: (){
-                      print('da kik thanh cong');
+                      Navigator.of(context).pushNamed('/AoDaiNguThan');
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
@@ -95,7 +95,7 @@ class MyHeader extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: (){
-                      print('da kik thanh cong');
+                      Navigator.of(context).pushNamed('/AoNhatBinh');
                     },
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.purple.shade400,
@@ -109,7 +109,7 @@ class MyHeader extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: (){
-                    print('da kik thanh cong');
+                    Navigator.of(context).pushNamed('/TuyetPhamLongBao');
                   },
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.purple.shade400,
