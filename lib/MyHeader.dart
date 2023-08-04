@@ -7,7 +7,7 @@ class MyHeader extends StatelessWidget {
       Container(
           width:1600,
           color: Colors.purple.shade50,
-          padding:  const EdgeInsets.symmetric(vertical: 5,horizontal: 170),
+          padding:  const EdgeInsets.symmetric(horizontal: 170),
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -58,12 +58,6 @@ class MyHeader extends StatelessWidget {
                         ,fontWeight: FontWeight.w600))
                 ),
                  InkWell(
-                     // onTap:(){
-                     //   Navigator.push(
-                     //       context,
-                     //       MaterialPageRoute(builder: (context) => TrangChu()),
-                     //   );
-                     // },
                      onTap:()=> Navigator.of(context).pushNamed('/TrangChu'),
                    // mouseCursor:SystemMouseCursors.click,
                     child: Card(

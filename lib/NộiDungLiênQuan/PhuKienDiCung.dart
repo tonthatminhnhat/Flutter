@@ -2,30 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import '../MyFinal.dart';
 import '../MyHeader.dart';
-void main() {
-  runApp(MaterialApp(
-    home: SafeArea(
-      child: Scaffold(
-        // resizeToAvoidBottomInset:false,
-        body: SingleChildScrollView(
-          child: Column(
-              children:[
-                MyHeader(),
-                LichSuAoDai(),
-                MyFinal(),
-              ]
-          ),
-        ),
-      ),
-    ),
-    debugShowCheckedModeBanner: false,
-  )
-  );
-}
-class LichSuAoDai extends StatelessWidget{
+
+class PhuKienCungAoDai extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Scaffold(
+          body:SingleChildScrollView(
+          child: Column(
+          children:[
+          MyHeader(),
+      Container(
       width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -731,7 +718,11 @@ class LichSuAoDai extends StatelessWidget{
           ],
         ),
       ),
-    );
+    ),
+            MyFinal()
+          ]),
+          )
+      );
   }
 
 }
