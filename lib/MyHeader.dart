@@ -75,7 +75,7 @@ class MyHeader extends StatelessWidget {
                     child: const Image(
                       image: AssetImage('image/LoGo.png'),
                       fit:BoxFit.fill,
-                      height: 110,width: 140,
+                      height: 90,width: 140,
                     )
                   )
                  ),

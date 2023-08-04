@@ -1,100 +1,46 @@
-
 import 'package:flutter/material.dart';
-void main() {
-runApp(MyApp());
+
+class HoverContainerExample extends StatefulWidget {
+  @override
+  _HoverContainerExampleState createState() => _HoverContainerExampleState();
 }
 
-class MyApp extends StatelessWidget {
-@override
-Widget build(BuildContext context) {
-return MaterialApp(
-title: 'Ví dụ Fade Transition',
-theme: ThemeData(
-primarySwatch: Colors.blue,
-),
-initialRoute: '/',
-routes: {
-'/': (context) => TrangChu(),
-'/second': (context) => TrangHai(),
-},
-);
-}
-}
+class _HoverContainerExampleState extends State<HoverContainerExample> {
+  bool isTapped = false;
+  bool isHovered = false;
 
-class TrangChu extends StatelessWidget {
-@override
-Widget build(BuildContext context) {
-return Scaffold(
-appBar: AppBar(title: Text('Trang chủ')),
-body: Center(
-child: Column(
-mainAxisAlignment: MainAxisAlignment.center,
-children: [
-Text('Trang chủ', style: TextStyle(fontSize: 24)),
-SizedBox(height: 20),
-TextButton(
-onPressed: () {
-Navigator.pushNamed(context, '/second');
-},
-child:
-Text('Chuyển đến trang thứ hai', style:
-TextStyle(color:
-Colors.white)),
-style:
-ButtonStyle(backgroundColor:
-MaterialStateProperty.all>(
-Colors.blue)),
-),
-],
-),
-),
-);
-}
-}
+  void handleTap() {
+    setState(() {
+      isTapped = !isTapped;
+    });
+  }
 
-class TrangHai extends StatelessWidget {
-
-final Duration duration = Duration(seconds :2);
-
-@override
-Widget build(BuildContext context) {
-
-return Scaffold(
-
-appBar : AppBar(title :Text("Trang hai")),
-body :Center(
-
-child :Column(
-
-mainAxisAlignment :MainAxisAlignment.center,
-
-children:<Widget>[
-
-FadeTransition(
-
-opacity :Tween>(begin :0, end :1).animate(
-
-CurvedAnimation(
-
-parent: ModalRoute.of(context)!.animation!,
-
-curve: Curves.easeIn,
-
-),
-
-),
-
-child :Container(
-
-width: 200,
-height: 200,
-color: Colors.blue,
-
-),
-),
-],
-),
-),
-);
-}
+  void handleHover(bool isHovered) {
+    setState(() {
+      this.isHovered = isHovered;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+        onTap: () => handleTap(),
+        onHover: (value) => handleHover(value),
+      child: Container(
+      height: 70,
+      width: 330,
+      margin: const EdgeInsets.only(top: 10, bottom: 10),
+      padding: const EdgeInsets.only(left:14),
+      decoration: BoxDecoration(
+        border: Border(
+          left: BorderSide(
+        // width: isTapped ? 5.0 : (isHovered ? 3.0 :2.5), // Điều chỉnh độ dày của viền dựa trên trạng thái nhấn và hover
+        color: isHovered ? Colors.blue : Colors.black, // Điều chỉnh màu sắc của viền dựa trên trạng thái nhấn và hover
+      ),
+      ),
+      ),
+      child:
+      Text('Click me', style: TextStyle(fontSize:20, color:(isTapped || isHovered) ? Colors.white : Colors.black)), // Thay đổi màu sắc chữ khi nhấn hoặc hover
+    ),
+    );
+  }
 }
