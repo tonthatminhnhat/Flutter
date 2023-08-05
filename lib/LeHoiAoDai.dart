@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 import 'MyFinal.dart';
 import 'MyHeader.dart';
+import 'NộiDungLiênQuan/CộtNộiDungLiênQuan.dart';
+import 'Style/ActionButton.dart';
 
 class LeHoiAoDai extends StatelessWidget{
+  final ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
-    return
-      Scaffold(
-          body:SingleChildScrollView(
-          child: Column(
-          children:[
-          MyHeader(),
+    return Scaffold(
+      appBar: null,
+      body: CustomScrollView(
+        controller:_scrollController,
+        slivers: [
+          SliverAppBar(
+            backgroundColor: Colors.purple.shade50,
+            automaticallyImplyLeading: false,
+            floating: true,
+            expandedHeight: 90,
+            flexibleSpace: MyHeader(),
+          ),
+          SliverToBoxAdapter(
+            child:
+            Column(
+              children: [
            Container(
       width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
       child: SingleChildScrollView(
@@ -193,221 +206,20 @@ class LeHoiAoDai extends StatelessWidget{
               ),
             ),
 //NoiDungLienQuan
-            Container(color:Colors.white38,
-              child: Column(
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(bottom:20,top: 43),
-                    width: 330,padding:const EdgeInsets.only(bottom:10,left:10),
-                    decoration: const BoxDecoration(
-                        border:Border(
-                            bottom: BorderSide(
-                                color:Colors.black54,width:3)
-                        )
-                    ),
-                    child: const Text('Bài viết mới nhất',
-                        style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,
-                            color:Color(0xFF424242))),
-                  ),
-                  Container(height: 80,width: 330,
-                    padding:const EdgeInsets.only(top:5,bottom: 5,),
-                    child: Row(
-                      children: [
-                        Container(
-                            width:2.5,color:Colors.black54,
-                            margin:const EdgeInsets.only(right: 15)
-                        ),
-                        Container(
-                          clipBehavior: Clip.hardEdge,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10)
-                          ),
-                          child: Image.asset(
-                            'image/nenmacaodai/4.jpg',
-                            height:70,width: 70,fit:BoxFit.cover,),
-                        ),
-                        Container( height: 90,width: 230,
-                          padding: const EdgeInsets.only(left:10,bottom: 5),
-                          child: const Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment:MainAxisAlignment.center,
-                            children: [Text('Nên mặc áo dài trong dịp nào là thích hợp nhất'
-                              ,style: TextStyle(
-                                fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                                height: 1.4,
-                              ),),
-                            ],
-                          ),
-                        )
-
-                      ],),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.only(bottom:20,top: 20),
-                        width: 330,padding:const EdgeInsets.only(bottom:10,left:10),
-                        decoration: const BoxDecoration(
-                            border:Border(
-                                bottom: BorderSide(
-                                    color:Colors.black54,width:3)
-                            )
-                        ),
-                        child: const Text('Nội dung liên quan',
-                            style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,
-                                color:Color(0xFF424242))),
-                      ),
-                      // ====================
-                      Container(height: 70,width: 330,
-                        margin:const EdgeInsets.only(top:10,bottom: 10,),
-                        child: Row(
-                          children: [
-                            Container(
-                                width:2.5,color:Colors.black54,
-                                margin:const EdgeInsets.only(right: 15)
-                            ),
-                            Container(
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10)
-                              ),
-                              child: Image.asset(
-                                'image/VaiMay/1.jpg',
-                                height:70,width: 70,fit:BoxFit.cover,),
-                            ),
-                            Container( height: 90,width: 230,
-                              padding: const EdgeInsets.only(left:10,bottom: 5),
-                              child: const Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:MainAxisAlignment.center,
-                                children: [Text('Các loại vải may áo dài đẹp, sang trọng và được ưa chuộng nhất'
-                                    ,style: TextStyle(
-                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                                      height: 1.4,
-                                    )),
-                                ],
-                              ),
-                            )
-
-                          ],),
-                      ),
-                      Container(height: 70,width: 330,
-                        margin:const EdgeInsets.only(top:10,bottom: 10,),
-                        child: Row(
-                          children: [
-                            Container(
-                                width:2.5,color:Colors.black54,
-                                margin:const EdgeInsets.only(right: 15)
-                            ),
-                            Container(
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10)
-                              ),
-                              child: Image.asset(
-                                'image/CuaHang/1.jpg',
-                                height:70,width: 70,fit:BoxFit.cover,),
-                            ),
-                            Container( height: 90,width: 230,
-                              padding: const EdgeInsets.only(left:10,bottom: 5),
-                              child: const Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:MainAxisAlignment.center,
-                                children: [Text('Những tiệm may áo dài lâu đời nhất ở Huế'
-                                    ,style: TextStyle(
-                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                                      height: 1.4,
-                                    )),
-                                ],
-                              ),
-                            )
-
-                          ],),
-                      ),
-                      Container(height: 70,width: 330,
-                        margin:const EdgeInsets.only(top:10,bottom: 10,),
-                        child: Row(
-                          children: [
-                            Container(
-                                width:2.5,color:Colors.black54,
-                                margin:const EdgeInsets.only(right: 15)
-                            ),
-                            Container(
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10)
-                              ),
-                              child: Image.asset(
-                                'image/ChupAnhAD/5.jpg',
-                                height:70,width: 70,fit:BoxFit.cover,),
-                            ),
-                            Container( height: 90,width: 230,
-                              padding: const EdgeInsets.only(left:10,bottom: 5),
-                              child: const Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:MainAxisAlignment.center,
-                                children: [Text('Mách bạn những địa điểm chụp áo dài đẹp ở Huế'
-                                    ,style: TextStyle(
-                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                                      height: 1.4,
-                                    )),
-                                ],
-                              ),
-                            )
-
-                          ],),
-                      ),
-                      Container(height: 70,width: 330,
-                        margin:const EdgeInsets.only(top:10,bottom: 10,),
-                        child: Row(
-                          children: [
-                            Container(
-                                width:2.5,color:Colors.black54,
-                                margin:const EdgeInsets.only(right: 15)
-                            ),
-                            Container(
-                              clipBehavior: Clip.hardEdge,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10)
-                              ),
-                              child: Image.asset(
-                                'image/PhuKien/1.jpg',
-                                height:70,width: 70,fit:BoxFit.cover,),
-                            ),
-                            Container( height: 90,width: 230,
-                              padding: const EdgeInsets.only(left:10,bottom: 5),
-                              child: const Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:MainAxisAlignment.center,
-                                children: [Text('Gợi ý những món đồ phụ kiện giúp bạn tỏa sáng khi diện áo dài'
-                                    ,style: TextStyle(
-                                      fontSize:15,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                                      height: 1.4,
-                                    )),
-                                ],
-                              ),
-                            )
-
-                          ],),
-                      ),
-
-
-
-                    ],
-                  ),
-
-                ],
-              ),
-            )
+                            NoiDungLienQuan(),
           ],
 
         ),
       ),
     ),
-            MyFinal()
-          ]),
-          )
-      );
-  }
-
+           MyFinal(),
+           ],
+           ),
+           ),
+           ],
+           ),
+           floatingActionButton:
+           buildFloatingActionButton(_scrollController),
+           );
+}
 }

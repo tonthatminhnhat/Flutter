@@ -2,18 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'MyFinal.dart';
 import 'MyHeader.dart';
+import 'NộiDungLiênQuan/CộtNộiDungLiênQuan.dart';
+import 'Style/ActionButton.dart';
 
 
 class LichSuAoDai extends StatelessWidget{
+  final ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
-  return
-    Scaffold(
-        body:SingleChildScrollView(
-        child: Column(
-        children:[
-        MyHeader(),
-          Container(
+    return Scaffold(
+        appBar: null,
+        body: CustomScrollView(
+          controller:_scrollController,
+          slivers: [
+        SliverAppBar(
+        backgroundColor: Colors.purple.shade50,
+          automaticallyImplyLeading: false,
+          floating: true,
+          expandedHeight: 90,
+          flexibleSpace: MyHeader(),
+        ),
+        SliverToBoxAdapter(
+          child:
+          Column(
+              children: [
+              Container(
     width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
     child: SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -115,90 +128,23 @@ class LichSuAoDai extends StatelessWidget{
             ],
           ),
           ),
-          Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(bottom:20,top: 35),
-                width: 330,padding:const EdgeInsets.only(bottom:18,left:10),
-                decoration: const BoxDecoration(
-                    border:Border(
-                        bottom: BorderSide(
-                            color:Colors.black54,width:3)
-                    )
-                ),
-                child: const Text('Nội dung liên quan',
-                    style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,
-                        color:Color(0xFF424242))),
-              ),
-              Container(height: 100,width: 330,
-                padding:const EdgeInsets.only(top:10,bottom: 10,),
-                child: Row(
-                  children: [
-                    Container(
-                        width:2.5,color:Colors.black54,
-                        margin:const EdgeInsets.only(right: 14)
-                    ),
-                    Container(
-                      clipBehavior: Clip.hardEdge,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10)
-                      ),
-                      child: Image.asset(
-                        'image/nenmacaodai/gia-dinh-mac-ao-dai-don-tet.jpg',
-                        height:80,width: 80,fit:BoxFit.cover,),
-                    ),
-                    Container( height: 100,width: 230,
-                      padding: const EdgeInsets.only(left:10,top:5,),
-                      child: const Text('Nên mặc áo dài trong dịp nào là thích hợp nhất là thích hợp nhất'
-                          ' là thích ',style: TextStyle(
-                        fontSize:16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                        height: 1.4,
-                      ),),
-                    )
 
-                  ],),
-              ),
-              Container(height: 100,width: 330,
-                padding:const EdgeInsets.only(top:10,bottom: 10,),
-                child: Row(
-                  children: [
-                    Container(
-                        width:2.5,color:Colors.black54,
-                        margin:const EdgeInsets.only(right: 14)
-                    ),
-                    Container(
-                      clipBehavior: Clip.hardEdge,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10)
-                      ),
-                      child: Image.asset(
-                        'image/nenmacaodai/gia-dinh-mac-ao-dai-don-tet.jpg',
-                        height:80,width: 80,fit:BoxFit.cover,),
-                    ),
-                    Container( height: 100,width: 230,
-                      padding: const EdgeInsets.only(left:10,top:5,),
-                      child: const Text('Các loại vải thường dùng để may áo dài đẹp',
-                        style: TextStyle(
-                          fontSize:16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
-                          height: 1.4,
-                        ),),
-                    )
-
-                  ],),
-              ),
-            ],
-          )
+        NoiDungLienQuan(),
         ],
 
       ),
     ),
   ),
-          MyFinal()
-        ]),
-        )
+                MyFinal(),
+              ],
+          ),
+        ),
+          ],
+        ),
+      floatingActionButton:
+      buildFloatingActionButton(_scrollController),
     );
   }
-
 }
  class LichSuAoDai1 extends  StatefulWidget  {
     @override

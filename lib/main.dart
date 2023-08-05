@@ -1,46 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_01/TrangPhucCungDinh.dart';
 
-class HoverContainerExample extends StatefulWidget {
-  @override
-  _HoverContainerExampleState createState() => _HoverContainerExampleState();
-}
+import 'AoDaiNguThan.dart';
+import 'AoNhatBinh.dart';
+import 'LeHoiAoDai.dart';
+import 'LichSuAoDai.dart';
+import 'NộiDungLiênQuan/ChupAoDaiDep.dart';
+import 'NộiDungLiênQuan/CuaHang.dart';
+import 'NộiDungLiênQuan/NenMacAoDaiKhiNao.dart';
+import 'NộiDungLiênQuan/PhuKienDiCung.dart';
+import 'NộiDungLiênQuan/VaiMayAoDai.dart';
+import 'TrangChu.dart';
+import 'TuyetPhamLongBao.dart';
 
-class _HoverContainerExampleState extends State<HoverContainerExample> {
-  bool isTapped = false;
-  bool isHovered = false;
-
-  void handleTap() {
-    setState(() {
-      isTapped = !isTapped;
-    });
-  }
-
-  void handleHover(bool isHovered) {
-    setState(() {
-      this.isHovered = isHovered;
-    });
-  }
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-        onTap: () => handleTap(),
-        onHover: (value) => handleHover(value),
-      child: Container(
-      height: 70,
-      width: 330,
-      margin: const EdgeInsets.only(top: 10, bottom: 10),
-      padding: const EdgeInsets.only(left:14),
-      decoration: BoxDecoration(
-        border: Border(
-          left: BorderSide(
-        // width: isTapped ? 5.0 : (isHovered ? 3.0 :2.5), // Điều chỉnh độ dày của viền dựa trên trạng thái nhấn và hover
-        color: isHovered ? Colors.blue : Colors.black, // Điều chỉnh màu sắc của viền dựa trên trạng thái nhấn và hover
-      ),
-      ),
-      ),
-      child:
-      Text('Click me', style: TextStyle(fontSize:20, color:(isTapped || isHovered) ? Colors.white : Colors.black)), // Thay đổi màu sắc chữ khi nhấn hoặc hover
-    ),
-    );
+    return
+      MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'My App',
+          initialRoute: '/TrangChu',
+
+          routes: {
+
+            '/TrangChu': (context) => TrangChu(),
+            '/TrangPhucCungDinh': (context) => TrangPhucCungDinh(),
+            '/TuyetPhamLongBao': (context) => TuyetPhamLongBao(),
+            '/LichSuAoDai': (context) => LichSuAoDai(),
+            '/LeHoiAoDai': (context) => LeHoiAoDai(),
+            '/AoDaiNguThan': (context) => AoDaiNguThan(),
+            '/AoNhatBinh': (context) => AoNhatBinh(),
+
+            '/ChupAoDaiDep': (context) => ChupAoDaiDep(),
+            '/CuaHangTruyenThong': (context) => CuaHangTruyenThong(),
+            '/NenMacAoDaiKhiNao': (context) => NenMacAoDaiKhiNao(),
+            '/PhuKienCungAoDai': (context) => PhuKienCungAoDai(),
+            '/VaiMayAoDaiDep': (context) => VaiMayAoDaiDep(),
+            //
+
+          },
+        );
+
   }
+}
+
+void main() {
+  runApp(MyApp());
 }
