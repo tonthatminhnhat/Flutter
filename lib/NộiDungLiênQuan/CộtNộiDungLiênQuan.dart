@@ -1,9 +1,11 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../Style/HoverContainer.dart';
 
 class NoiDungLienQuan extends StatefulWidget {
+
   @override
   _NoiDungLienQuan createState() => _NoiDungLienQuan();
 }
@@ -126,7 +128,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
             Container(height:70,
               margin: const EdgeInsets.only(
                 top: 10, bottom: 10,),
-              child: InkWell(
+              child:
+              InkWell(
                 onTap:()=> Navigator.of(context).pushNamed('/VaiMayAoDaiDep'),
                 onHover:(value){
                   setState(() {
@@ -371,10 +374,33 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
 
           ],
         ),
+        Container(width:330,
+          margin:EdgeInsets.only(top:20),
+          child:const Text(
+              ' FanPage chính thức của chúng tôi:'
+              , style: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.w500,
+            color: Color(0xFF424242),
+            height: 1.4,
+          )),
+        ),
+        Container(
+          height: 140,
+          child:
+          InkResponse(
+              onTap:()=> _launchURL('https://www.facebook.com/huefestival.official'),
+              child: Image.asset('image/face.png',
+                height: 220,width: 330,)
+          ),
 
+        )
       ],
     ),
   );
   }
-
+}
+_launchURL(var s) async {
+  Uri _url = Uri.parse(s);
+  await launchUrl(_url, webOnlyWindowName: '_self');
 }
