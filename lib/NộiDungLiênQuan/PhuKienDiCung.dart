@@ -55,7 +55,8 @@ class PhuKienCungAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Từ lâu phụ kiện đã là một món đồ không thể thiếu khi phối đồ. Và áo dài cũng không ngoại lệ, phụ kiện áo dài sẽ giúp tổng thể set áo dài của bạn trở nên nổi bật và thu hút hơn. Nhưng phụ kiện đi kèm với áo dài bao gồm những gì là một trong thắc mắc của hầu hết các chị em phụ nữ. Cũng bởi, việc mang thêm những phụ kiện áo dài này sẽ giúp bộ trang phục trở nên nổi bật và thời trang hơn rất nhiều.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                        height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:40),
                   const Text('      NHỮNG PHỤ KIỆN ĐI KÈM ÁO DÀI KHÔNG THỂ THIẾU'
@@ -88,7 +89,7 @@ class PhuKienCungAoDai extends StatelessWidget{
                       textAlign:TextAlign.justify),
                   const SizedBox(height:15),
                   const Text('      - Bên cạnh đó, bạn nên búi tóc một cách đơn giản, gọn gàng, không quá cao hoặc quá thấp, tóc có thể cột lên hết hoặc để vài sợi buông lơi trước mặt để vừa che được khuyết điểm lại giúp bạn nhìn cuốn hút hơn.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -459,7 +460,7 @@ class PhuKienCungAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:30),
 // =======================================================\
-                  const Text('      MỘT SỐ LƯU Ý KHI LỰA CHỌN PHỤ KIỆN ĐI KÈM ÁO DÀI THEO TỪNG DÁNG ÁO DÀI'
+                  const Text('      MỘT SỐ LƯU Ý KHI LỰA CHỌN PHỤ KIỆN KÈM ÁO DÀI THEO TỪNG DÁNG ÁO DÀI'
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Bên cạnh những phụ kiện áo dài mà chúng tôi gợi ý ở trên, các chị em phụ nữ nên lựa chọn phụ kiện tùy theo kiểu dáng của áo dài. Cụ thể:'

@@ -55,7 +55,7 @@ class AoNhatBinh extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Lịch sử trôi qua để lại những dấu ấn văn hóa đẹp đẽ trường tồn mãi theo thời gian. Thời kỳ nhà Nguyễn đã hình thành những thành tựu về trang phục, là bước đệm cho những phát triển vượt trội sau này. Trong đó, chúng ta phải kể đến chiếc áo Nhật Bình, loại trang phục truyền thống Việt Nam dành cho nữ giới hoàng tộc thời bấy giờ. Ngoài giá trị về mặt thẩm mỹ, áo dài Nhật Bình còn mang nhiều giá trị lịch sử và ý nghĩa văn hóa.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:40),
                   const Text('      Áo Nhật Bình Là Gì ?'
@@ -508,7 +508,6 @@ class AoNhatBinh extends StatelessWidget{
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
                           style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
-
                           children:const <TextSpan>[
                             TextSpan(text:'     Tuy được thiết kế dựa theo nguyên mẫu áo Phi Phong nhưng'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5)),
@@ -527,13 +526,13 @@ class AoNhatBinh extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,)),
                   const SizedBox(height:20),
                   const Text('      Tuy được thiết kế dựa theo nguyên mẫu áo Phi Phong nhưng đặc điểm của áo Nhật Bình vẫn có sự khác biệt. Điều này thể hiện tinh thần sáng tạo cũng như lòng tự tôn của dân tộc. Đồng thời, chúng khắc họa rõ nét các đặc điểm văn hóa người Việt chúng ta. Cụ thể như sau:'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify,),
                   const SizedBox(height:20),
                   const Text('      Về hoa văn áo Nhật Bình'
                       ,style:TextStyle(fontSize: 18,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,)),
                   const SizedBox(height:20),
                   const Text('      Một số bức họa lưu lại cho thấy, về hoa văn trên áo Nhật Bình thì chủ yếu là dạng hình tròn khép kín. Và bên trong hình tròn có thêu các hình ảnh phượng ổ, loan ổ. Những hoa văn phụ cũng phong phú hơn. '
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:15),
                   const Text('      Những chữ Thọ, Phúc bằng chỉ đỏ, chỉ vàng được sử dụng như một hàm ý mang lại điều tốt lành, may mắn. '
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
@@ -555,10 +554,10 @@ class AoNhatBinh extends StatelessWidget{
                       ,style:TextStyle(fontSize: 18,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,)),
                   const SizedBox(height:20),
                   const Text('      Sự sắp xếp hoa văn trên áo Nhật Bình được sắp xếp và thay đổi dựa theo cấp bậc, địa vị của người mặc. Chỉ cần nhìn vào hoa văn là có thể phân biệt danh phận và vai vế của người đó. Đối với áo cho cấp Hậu thì quy chế không được áp dụng. '
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:15),
                   const Text('      Bên cạnh đó, dựa vào màu sắc của áo cũng có thể biết được cấp bậc của người mặc. Ví dụ như áo Nhật Bình dành cho Hoàng Hậu sẽ có màu vàng hoặc màu cam, của Công Chúa sẽ là màu đỏ,…'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [

@@ -56,13 +56,14 @@ class CuaHangTruyenThong extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Xứ Huế nổi tiếng cầu kỳ, tỉ mỉ trong việc may đo áo dài; bao du khách đến với Cố đô chắc cũng có lần xao xuyến trước hình ảnh những tà áo dài thướt tha trên đường phố Huế, để rồi mặc nhiên, như một lẽ thường, cứ đến Huế là phải đi mua vải áo dài, may áo dài để làm kỷ niệm…'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                          height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   LichSuAoDai1(),
                   const SizedBox(height:20),
                   const Text('      Những tiệm may nổi tiếng của Huế từ xưa đến nay:'
-                         ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                         ,style:TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      1. Tiệm may Hùng'
@@ -70,7 +71,7 @@ class CuaHangTruyenThong extends StatelessWidget{
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Nằm trên đường Mai Thúc Loan, một tuyến đường tấp nập, tập trung khá nhiều tiệm áo dài Huế, nhưng dẫu vậy, Hùng vẫn là một địa chỉ uy tín được nhiều người tìm đến bởi kinh nghiệm cha truyền con nối. Từ lúc ba chú Hùng mở tiệm tới đời chú tiếp quản cũng đã ngót nghét hơn 50 năm.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -110,7 +111,7 @@ class CuaHangTruyenThong extends StatelessWidget{
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Tiệm nằm ngay trên mặt tiền đường Đinh Tiên Hoàng, bạn đi qua là nhận ra ngay vì con đường này khá vắng vẻ, chủ yếu là Cây xanh vì ở sát Thành trong Huế chứ không có nhiều cửa hàng ồn ào. Cửa hàng cha truyền con nối và được mở cửa từ năm 1957 đên nay.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -150,7 +151,7 @@ class CuaHangTruyenThong extends StatelessWidget{
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Nhà may áo dài Minh Tân là thương hiệu may áo dài đẹp nổi tiếng lâu đời ở Huế. Nhà may áo dài Minh Tân chuyên may áo dài thời trang; từ áo dài học sinh, áo dài công sở đến áo dài mặc trong các buổi lễ long trọng như đám hỏi, đám cưới, dạ hội... '
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -194,7 +195,7 @@ class CuaHangTruyenThong extends StatelessWidget{
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
                   const SizedBox(height:20),
                   const Text('      Ngoài ra, tại Huế còn có các nhà may khác, có thể kể đến như Nhà may Chi Silk (18 Nguyễn Sinh Cung), Nhà may Minh Tiến (31 Hà Nội), Nhà may Tuấn (02 Bà Triệu), Nhà may Anh Bảo (64 A Lê Lợi), Nhà may Thanh Châu (156 Phan Đăng Lưu), Nhà may Phương Hoa(57 Mai Thúc Loan), Nhà may Xuân Thi (72 Phan Đăng Lưu), Nhà may Thùy Trang (85 Mai Thúc Loan), Nhà may Cuộc (50 Bạch Đằng)...'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Hi vọng rằng đây là những gợi ý tốt giúp bạn có được sự lựa chọn hợp lý về địa chỉ may đo áo dài khi có dịp ghé Huế.'
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),

@@ -55,7 +55,8 @@ class ChupAoDaiDep extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Huế là địa danh nổi tiếng với nhiều cảnh đẹp, di tích lịch sử, là vùng đất kinh kỳ vàng son. Bạn đã dự định gì cho chuyến du lịch cố đô Huế sắp tới chưa? Nếu bạn có ý định chụp ảnh check in tà áo dài duyên dáng mang đậm phong cách của những chàng trai cô gái Huế dịu dàng thì đừng bỏ qua bài viết này nhé!'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                        height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:30),
                   // =============================1=============================

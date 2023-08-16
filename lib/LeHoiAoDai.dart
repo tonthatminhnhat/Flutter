@@ -55,7 +55,8 @@ class LeHoiAoDai extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Lễ hội áo dài được xem là một trong những chương trình "đinh" nhất của tuần lễ Festival Huế khiến bao nhiêu du khách phải sao xuyến trước màn trình diễn trang phục áo dài do các nhà thiết kế và người mẫu xứ Huế tạo nên.  '
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                        height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Tuần lễ Áo dài cộng đồng Huế được tổ chức nhằm khai thác thế mạnh, thương hiệu và giá trị văn hóa độc đáo của Áo dài Huế, xây dựng hình ảnh du lịch Huế gắn với Áo dài, kích cầu du lịch phát triển. Đồng thời, tôn vinh Áo dài Huế, Áo dài Việt Nam, khẳng định thương hiệu “Huế - Kinh đô Áo dài”, góp phần tuyên truyền quảng bá văn hóa Huế gắn với quảng bá, xúc tiến về du lịch. Hoạt động này cũng từng bước triển khai có hiệu quả Đề án “Huế - Kinh đô Áo dài”.'

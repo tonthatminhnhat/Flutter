@@ -58,7 +58,8 @@ class TuyetPhamLongBao extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Những ngày Tết đến (mùng 1 đến mùng 3), ngày giải phóng Thừa Thiên Huế (26/3) và ngày Quốc khánh (2/9) sẽ miễn phí giá vé tham quang Huế, khi đến tham quan khu Di sản Huế, du khách, giới nghiên cứu và công chúng có cơ hội chiêm ngưỡng “tuyệt phẩm” trang phục Cung đình nhà Nguyễn, gồm Long bào hoàng đế, Hoàng bào hoàng hậu, Mãng bào hoàng tử, áo sa kép của hoàng tử và công chúa.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                        height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,

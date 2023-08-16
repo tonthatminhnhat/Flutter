@@ -45,10 +45,6 @@ class LichSuAoDai extends StatelessWidget{
               const Text('Áo dài Huế - Theo Dòng lịch sử'
                   ,style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
               const SizedBox(height:20),
-              const Text('      Thừa Thiên - Huế vốn là chiếc nôi sản sinh của áo dài ngũ thân, đồng thời là mảnh đất gìn giữ, nuôi dưỡng và phát triển áo dài Việt Nam suốt hàng trăm năm qua. Xuyên suốt thời gian giữ vai trò là kinh đô của đất nước, Cố đô Huế cũng là Kinh đô áo dài Việt Nam, nổi danh bởi “chế độ y quan” rực rỡ - biểu trưng cho một triều đại phương Đông. Chính vì thế, áo dài là bản sắc văn hóa vùng đất, nét đẹp của con người xứ Huế. Cùng với sự đổi thay của lịch sử, áo dài qua từng thời đại đã có không ít sự điều chỉnh. Tuy nhiên, dù điều chỉnh ra sao, áo dài vẫn là quốc phục, niềm tự hào của người dân Việt Nam nói chung và là “món ăn tinh thần” thể hiện bản sắc riêng của văn hóa vùng đất Cố đô Huế.'
-                  ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
-                  textAlign:TextAlign.justify),
-              const SizedBox(height:20),
               Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
@@ -59,6 +55,11 @@ class LichSuAoDai extends StatelessWidget{
                   ),
                 ],
               ),
+              const SizedBox(height:20),
+              const Text('      Thừa Thiên - Huế vốn là chiếc nôi sản sinh của áo dài ngũ thân, đồng thời là mảnh đất gìn giữ, nuôi dưỡng và phát triển áo dài Việt Nam suốt hàng trăm năm qua. Xuyên suốt thời gian giữ vai trò là kinh đô của đất nước, Cố đô Huế cũng là Kinh đô áo dài Việt Nam, nổi danh bởi “chế độ y quan” rực rỡ - biểu trưng cho một triều đại phương Đông. Chính vì thế, áo dài là bản sắc văn hóa vùng đất, nét đẹp của con người xứ Huế. Cùng với sự đổi thay của lịch sử, áo dài qua từng thời đại đã có không ít sự điều chỉnh. Tuy nhiên, dù điều chỉnh ra sao, áo dài vẫn là quốc phục, niềm tự hào của người dân Việt Nam nói chung và là “món ăn tinh thần” thể hiện bản sắc riêng của văn hóa vùng đất Cố đô Huế.'
+                  ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                      height: 1.5,fontStyle:FontStyle.italic),
+                  textAlign:TextAlign.justify),
               const SizedBox(height:20),
               const Text('      Áo dài ngũ thân- áo dài Huế xuất hiện từ đầu thế kỷ XVII, từ nhu cầu về trang phục của người Đàng Trong: vừa gọn gàng, giản tiện vừa kín đáo và phù hợp với lễ nghi truyền thống của người Việt trên vùng đất mới. Đào Duy Từ đã từng khuyên chúa Nguyễn Phúc Nguyên sử dụng áo dài ngũ thân làm trang phục chính thức cho người dân Đàng Trong để tạo nên sự khác biệt với Đàng Ngoài, nhưng điều này chưa được thực hiện.'
                   ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),

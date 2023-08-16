@@ -57,7 +57,8 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   ),
                   const SizedBox(height:20),
                   const Text('      Hình ảnh Áo dài là biểu tượng của người con gái Việt Nam. Sự duyên dáng dịu dàng của mỗi cô gái khi mang trong mình bộ áo dài luôn là hình ảnh đẹp và lâu quên trong mắt người đối diện. Hiện nay, áo dài được sử dụng nhiều trong mỗi dịp lễ, buổi tiệc hay các sự kiện quan trọng như cưới hỏi,…Thế nên chọn mua vải và may cho mình bộ áo dài đẹp, hợp thời trang đang là sự lựa chọn rất cần thiết của mỗi người.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),
+                        height: 1.5,fontStyle:FontStyle.italic),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   // =============================1=============================
@@ -65,7 +66,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Đứng đầu trong danh sách phải kể đến chất liệu chiffon, với độ mềm mại mà chiffon mang lại giúp tà áo dài thêm thướt tha, uyển chuyển. Không những vậy còn giúp cho chị em trở nên đằm thắm và dịu dàng.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -117,7 +118,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Vải lụa cũng rất mềm mại gần giống với vải chiffon, tuy nhiên vải lụa dày hơn và có độ bóng hơn. Vải lụa được mọi người sử dụng may áo dài trong rất nhiều trường hợp như đi học, may áo dài cưới, áo dài tết… Vải lụa cũng có độ rũ, đây là một ưu điểm khá tốt giúp cho người mặc che đi được những khuyết điểm trên cơ thể.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -160,7 +161,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Là một phiên bản hoàn hảo của lụa tơ tằm, vải gấm đem lại sự sang trọng cùng với những hoa văn được dệt trực tiếp lên bề mặt vải. Áo dài vải gấm giúp người mặc trở nên quý phái hơn. Người lớn tuổi rất thích chọn chất liệu này để may áo dài bởi chúng không làm người mặc bị quá trẻ so với số tuổi.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -298,7 +299,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Là một loại vải được dệt hoàn toàn bằng thủ công với những hoa văn tượng trưng cho từng vùng miền, bản sắc dân tộc. Vải thổ cẩm đem đến sự độc đáo pha lẫn nét núi rừng giúp cho tà áo dài trở nên truyền thống và đa sắc hơn.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -344,7 +345,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Là một chất liệu được dệt theo nhiều phương pháp, cũng như nhiều chất liệu khác nhau. Vải ren có những lổ hổng nhỏ và những hình hoa văn khác nhau trên bề mặt giúp cho chất liệu được mọi người ưa chuộng bởi sự khác lạ của nó. Vải ren thường được mọi người sử dụng để may áo dài trong các dịp lễ hỏi, cưới hay những lễ hội quan trọng.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -387,7 +388,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
           ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
       const SizedBox(height:20),
       const Text('      Vải voan có đặc điểm nhận dạng tương tự như vải chiffon, tuy nhiên vải voan hoàn toàn được dệt từ sợi tổng hợp. Voan cũng mỏng và nhẹ tạo được sự mềm mại thướt tha cho tà áo dài. Những chị em phụ nữ nào thích sự đằm thắm và nhẹ nhàng thì vải voan sẽ là một sự lựa chọn sáng giá.'
-          ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+          ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
       const SizedBox(height:20),
       Row(mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -430,7 +431,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
     ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
     const SizedBox(height:20),
     const Text('      Vải tuyết mưa là loại vải nhân tạo dệt kim đôi, được lấy ý tưởng dệt từ chiếc cầu La Mã cổ điển. Đây không hẳn là chất liệu được nhiều bạn sử dụng để may áo dài, tuy nhiên vì vải có độ bền khá cao, giá rẻ và có nhiều ưu điểm nên vải tuyết mưa cũng là chất liệu nằm trong danh sách ưu tiên khi chọn may áo dài.'
-        ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+        ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
     const SizedBox(height:20),
     Row(mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -462,10 +463,10 @@ class VaiMayAoDaiDep extends StatelessWidget{
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                   const SizedBox(height:20),
                   const Text('      Vải organza hay còn được gọi là vải tơ sống, vải được dệt từ lụa và có bổ sung thêm chất keo. Ngoài ra vải được dệt với mật độ giữa các sợi vải rất thưa nên chúng ta có thể nhìn xuyên thấu qua bề mặt vải. Vải organza tuy ra đời đã lâu nhưng đối với áo dài thì đây lại là một chất liệu khá mới mẻ.'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   const Text('      Vải organza thường được kết hợp với nhiều chất liệu khác để may áo dài. Vải organza giúp tà áo dài trở nên tinh tế và có một vẻ đẹp rất khác lạ.'
-                    ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
+                    ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -519,7 +520,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                           children:const <TextSpan>[
                             TextSpan(text:'      Nếu bạn muốn có một chiếc áo dài bay bổng, nhẹ nhàng với những tà áo có độ rũ hay không bị đơ cứng thì tốt nhất bạn nên chọn '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,
@@ -532,7 +533,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                           children:const <TextSpan>[
                             TextSpan(text:'      Đối với vải ren'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,color: Color(0xFF424242),height: 1.5)),
@@ -545,7 +546,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                           children:const <TextSpan>[
                             TextSpan(text:'      Khi bạn muốn thực sự trưởng thành hay tạo nên một hình ảnh chững chạc, quý phái thì vải nhung là sự lựa chọn lý tưởng. '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,
@@ -561,7 +562,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                           children:const <TextSpan>[
                             TextSpan(text:'      Hay bạn muốn có những bộ ảnh tuyệt đẹp với chiếc áo dài thì hãy chọn '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,
@@ -577,7 +578,7 @@ class VaiMayAoDaiDep extends StatelessWidget{
                   const SizedBox(height:20),
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
-                          style:DefaultTextStyle.of(context).style,
+                          style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
                           children:const <TextSpan>[
                             TextSpan(text:'      Và nếu như bạn muốn có những kiểu áo dài cách tân, hiện đại thì hãy chọn ngay '
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,

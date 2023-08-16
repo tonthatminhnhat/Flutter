@@ -46,7 +46,8 @@ class TrangPhucCungDinh extends StatelessWidget {
                           ,style:TextStyle(fontSize: 26,fontWeight: FontWeight.w600,color: Color(0xFF424242))),
                       const SizedBox(height:20),
                       const Text('      Khi biên soạn bộ điển lệ nổi tiếng của triều Nguyễn, Khâm định Ðại Nam hội điển sự lệ, các sử quan của triều đình đã dành quyển 78 và quyển 242 để bàn về việc ăn mặc của các bậc đế, hậu, hoàng tử, công chúa, quan lại… triều Nguyễn, từ trang phục dùng trong các dịp triều lễ, khánh tiết, tết nhứt, cho đến thường phục, kể cả nội y, “phụ kiện”...'
-                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
+                      ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Color(0xFF424242)
+                            ,height: 1.5,fontStyle:FontStyle.italic),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
                       Row(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
