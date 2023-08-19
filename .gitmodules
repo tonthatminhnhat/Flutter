@@ -1,3 +1,3 @@
-[submodule "Flutter"]
-    path = F:/Flutter_01/build/Flutter
-    url = git@github.com:tonthatminhnhat/Flutter.git
+[submodule "tonthatminhnhat/Flutter"]
+    path = ../Flutter
+    url = https://github.com/tonthatminhnhat/Flutter.git
