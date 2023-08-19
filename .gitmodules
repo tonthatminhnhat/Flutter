@@ -1,4 +1,4 @@
 [submodule "tonthatminhnhat/Flutter"]
-    path = ../Flutter
+    path = tonthatminhnhat/Flutter
     url = https://github.com/tonthatminhnhat/Flutter.git
 
