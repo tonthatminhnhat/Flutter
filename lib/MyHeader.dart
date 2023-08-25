@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 class MyHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return
@@ -8,7 +7,8 @@ class MyHeader extends StatelessWidget {
           width:1600,
           color: Colors.purple.shade50,
           padding:  const EdgeInsets.symmetric(horizontal: 170),
-          child: SingleChildScrollView(
+          child:
+          SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               mainAxisSize: MainAxisSize.max,
@@ -120,7 +120,7 @@ class MyHeader extends StatelessWidget {
             ),
           ));
   }}
-  _launchURL(var s) async {
-    Uri _url = Uri.parse(s);
-     await launchUrl(_url, webOnlyWindowName: '_self');
-  }
+  // _launchURL(var s) async {
+  //   Uri _url = Uri.parse(s);
+  //    await launchUrl(_url, webOnlyWindowName: '_self');
+  // }

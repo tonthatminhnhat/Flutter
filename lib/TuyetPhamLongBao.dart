@@ -15,8 +15,6 @@ class TuyetPhamLongBao extends StatelessWidget{
           controller:_scrollController,
           slivers: [
         SliverAppBar(
-        // pinned: true,
-        // elevation: 0, // Bỏ viền của SliverAppBar
         backgroundColor: Colors.purple.shade50,
           automaticallyImplyLeading: false,
           floating: true,
@@ -162,14 +160,13 @@ class TuyetPhamLongBao extends StatelessWidget{
                   const Text('      Những màu sắc, họa tiết trên Long Bào đều có ý nghĩa sâu xa:'
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign:TextAlign.justify),
                   const SizedBox(height:20),
-                  LichSuAoDai1(),
+                  YouTube(),
 
                 ],
               ),
             ),
             NoiDungLienQuan(),
           ],
-
         ),
       ),
     ),
@@ -183,13 +180,12 @@ class TuyetPhamLongBao extends StatelessWidget{
       buildFloatingActionButton(_scrollController),
     );
   }
-
 }
-class LichSuAoDai1 extends  StatefulWidget  {
+class YouTube extends  StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _LichSuAoDai();
+  State<StatefulWidget> createState() => _YouTube();
 }
-class _LichSuAoDai extends State<LichSuAoDai1> {
+class _YouTube extends State<YouTube> {
   late YoutubePlayerController _controller;
   @override
   void initState() {

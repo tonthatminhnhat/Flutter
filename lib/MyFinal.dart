@@ -4,13 +4,13 @@ class MyFinal extends StatelessWidget {
     return
       Container(
           width:1600,height: 100,
-
           color: Colors.purple.shade50,
-          padding:  const EdgeInsets.symmetric(vertical: 20,horizontal: 150),
+          padding:  const EdgeInsets.symmetric(vertical: 10,horizontal: 150),
             child:const Text('Thiết kế: Tôn Thất Minh Nhật\n\n'
-                'Trang web không được sao chép dưới bất kỳ hình thức nào vì chưa xin phép bản quyền',style: TextStyle(
-              fontSize: 14,
-            ),)
+                'Trang web không được sao chép dưới bất kỳ hình thức nào vì chưa xin phép bản quyền\n\n'
+                'SDT: 0901232199',
+              style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),
+            )
           );
   }
 }

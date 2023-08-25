@@ -39,7 +39,8 @@ class LichSuAoDai extends StatelessWidget{
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment:CrossAxisAlignment.start,
             children: [
-              const Text("   Trang chủ > Lịch sử áo dài",style: TextStyle(fontSize:13,fontWeight: FontWeight.w300,
+              const Text("   Trang chủ > Lịch sử áo dài",
+                  style: TextStyle(fontSize:13,fontWeight: FontWeight.w300,
                 color: Colors.grey,)),
               const SizedBox(height:15),
               const Text('Áo dài Huế - Theo Dòng lịch sử'

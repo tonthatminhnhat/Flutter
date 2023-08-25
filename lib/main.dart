@@ -20,9 +20,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'My App',
           initialRoute: '/TrangChu',
-
           routes: {
-
             '/TrangChu': (context) => TrangChu(),
             '/TrangPhucCungDinh': (context) => TrangPhucCungDinh(),
             '/TuyetPhamLongBao': (context) => TuyetPhamLongBao(),
@@ -30,20 +28,16 @@ class MyApp extends StatelessWidget {
             '/LeHoiAoDai': (context) => LeHoiAoDai(),
             '/AoDaiNguThan': (context) => AoDaiNguThan(),
             '/AoNhatBinh': (context) => AoNhatBinh(),
-
             '/ChupAoDaiDep': (context) => ChupAoDaiDep(),
             '/CuaHangTruyenThong': (context) => CuaHangTruyenThong(),
             '/NenMacAoDaiKhiNao': (context) => NenMacAoDaiKhiNao(),
             '/PhuKienCungAoDai': (context) => PhuKienCungAoDai(),
             '/VaiMayAoDaiDep': (context) => VaiMayAoDaiDep(),
             //
-
           },
         );
-
   }
 }
-
 void main() {
   runApp(MyApp());
 }

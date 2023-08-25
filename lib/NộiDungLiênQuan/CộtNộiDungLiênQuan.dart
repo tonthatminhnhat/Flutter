@@ -5,7 +5,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../Style/HoverContainer.dart';
 
 class NoiDungLienQuan extends StatefulWidget {
-
   @override
   _NoiDungLienQuan createState() => _NoiDungLienQuan();
 }
@@ -16,7 +15,7 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
   void initState() {
     super.initState();
     // Tạo các HoverManager và thêm vào danh sách hoverManagers
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 5; i++) {
       hoverManagers.add(HoverManager());
     }
   }
@@ -26,10 +25,12 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
     color: Colors.white38,
     child: Column(
       children: [
+        // Tiêu đề bài viết mới nhất
         Container(
           margin: const EdgeInsets.only(
-              bottom: 20, top: 43),
-          width: 330,
+              bottom: 20,
+              top: 43),
+              width: 330,
           padding: const EdgeInsets.only(
               bottom: 10, left: 10),
           decoration: const BoxDecoration(
@@ -43,11 +44,13 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                   fontWeight: FontWeight.w600,
                   color: Color(0xFF424242))),
         ),
-
-        Container(height:70,
+        // Bài viết mới nhất
+        Container(
+          height:70,
           margin: const EdgeInsets.only(
             top: 10, bottom: 10,),
-          child: InkWell(
+          child:
+          InkWell(
             onTap:()=> Navigator.of(context).pushNamed('/NenMacAoDaiKhiNao'),
             onHover:(value){
               setState(() {
@@ -65,7 +68,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                           color: hoverManagers[0].isHovered ? Colors.black54 : Colors.white54)
                   )
               ),
-              child: Row(
+              child:
+              Row(
                 children: [
                   Container(
                     clipBehavior: Clip.hardEdge,
@@ -98,16 +102,13 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                       ],
                     ),
                   )
-
                 ],),
             ),
           ),
         ),
-
-
-        Column(
-          children: [
-            Container(
+        //==============================================================
+        // Tiêu đề nội dung liên quan
+        Container(
               margin: const EdgeInsets.only(
                   bottom: 20, top: 20),
               width: 330,
@@ -124,8 +125,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                       fontWeight: FontWeight.w600,
                       color: Color(0xFF424242))),
             ),
-            // ====================
-            Container(height:70,
+        // Các loại vải may áo dài đẹp, sang trọng và được ưa chuộng nhất
+        Container(height:70,
               margin: const EdgeInsets.only(
                 top: 10, bottom: 10,),
               child:
@@ -185,10 +186,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                 ),
               ),
             ),
-
-            // 'image/CuaHang/1.jpg',      'Những tiệm may áo dài lâu đời nhất ở Huế'
-
-            Container(height:70,
+        // 'Những tiệm may áo dài lâu đời nhất ở Huế'
+        Container(height:70,
               margin: const EdgeInsets.only(
                 top: 10, bottom: 10,),
               child: InkWell(
@@ -247,10 +246,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                 ),
               ),
             ),
-
-            // 'image/ChupAnhAD/5.jpg',      'Mách bạn những địa điểm chụp áo dài đẹp ở Huế'
-
-            Container(height:70,
+        // 'Mách bạn những địa điểm chụp áo dài đẹp ở Huế'
+        Container(height:70,
               margin: const EdgeInsets.only(
                 top: 10, bottom: 10,),
               child: InkWell(
@@ -309,10 +306,8 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
                 ),
               ),
             ),
-
-            //      'image/PhuKien/1.jpg',        'Gợi ý những món đồ phụ kiện giúp bạn tỏa sáng khi diện áo dài'
-
-            Container(height:70,
+        // 'Gợi ý những món đồ phụ kiện giúp bạn tỏa sáng khi diện áo dài'
+        Container(height:70,
               margin: const EdgeInsets.only(
                 top: 10, bottom: 10,),
               child: InkWell(
@@ -372,8 +367,7 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
               ),
             ),
 
-          ],
-        ),
+        // FanPage chính thức của chúng tôi
         Container(width:330,
           margin:EdgeInsets.only(top:20),
           child:const Text(
@@ -385,6 +379,7 @@ class _NoiDungLienQuan  extends State<NoiDungLienQuan>{
             height: 1.4,
           )),
         ),
+        // link Fanpage
         Container(
           height: 140,
           child:

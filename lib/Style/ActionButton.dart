@@ -8,7 +8,8 @@ Widget buildFloatingActionButton(ScrollController scrollController) {
       curve: Curves.easeInOut,
     );
   }
-  return FloatingActionButton(
+  return
+    FloatingActionButton(
     onPressed: _scrollToTop,
     child: Icon(Icons.arrow_upward),mini: true,
     backgroundColor: Colors.purple.shade200,

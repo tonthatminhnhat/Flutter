@@ -1,39 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import '../MyFinal.dart';
 import '../MyHeader.dart';
 import 'NộiDungLiênQuan/CộtNộiDungLiênQuan.dart';
 import 'Style/ActionButton.dart';
+import 'Style/Youtube.dart';
 class AoNhatBinh extends StatelessWidget{
+  //Tạo 1 con cuộn để thực hiện tương tác
   final ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: null,
+        appBar: null, // không dùng appBar
         body: CustomScrollView(
-          controller:_scrollController,
+          controller:_scrollController,  // Truyền con cuộn vào
           slivers: [
         SliverAppBar(
+          // Màu nền và đổ bóng của Header
         backgroundColor: Colors.purple.shade50,
+          // Không hiển thị nút back khi chuyền trang
           automaticallyImplyLeading: false,
+          // Cho phép SliverAppBar nổi lên khi người dùng cuộn nội dung
           floating: true,
+          // Đặt chiều cao mở rộng của SliverAppBar
           expandedHeight: 90,
+          // Truyền Header đã thiết kế vào
           flexibleSpace: MyHeader(),
         ),
+            // chuyển nội widget thành sliver widget để
+            // có thể tương tác với CustomScrollView()
         SliverToBoxAdapter(
+          // Tạo nội dung bắt đầu bằng 1 cột
           child:
           Column(
               children: [
-      Container(
-      width: 1200,color: Colors.white38,padding: EdgeInsets.symmetric(vertical: 15),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(width: 850,
-              margin: const EdgeInsets.only(right: 20),
-              child: Column(
+               Container(
+                width: 1200,color: Colors.white38,
+                 padding: EdgeInsets.symmetric(vertical: 15),
+                child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+               crossAxisAlignment: CrossAxisAlignment.start,
+                 children: [
+                  Container(width: 850,
+                   margin: const EdgeInsets.only(right: 20),
+               child:
+               Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment:CrossAxisAlignment.start,
                 children: [
@@ -65,6 +76,7 @@ class AoNhatBinh extends StatelessWidget{
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),
                       textAlign:TextAlign.justify),
                   const SizedBox(height:20),
+
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Column(
@@ -83,7 +95,7 @@ class AoNhatBinh extends StatelessWidget{
                   const Text('      Xem video để tìm hiểu thêm về Áo Nhật Bình:'
                       ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,)),
                   const SizedBox(height:20),
-                  LichSuAoDai1(),
+                   Youtube(url: 'https://www.youtube.com/watch?v=LEs2CWT9jVU',),
                   const SizedBox(height:30),
                   const Text('      Nguồn gốc áo Nhật Bình'
                       ,style:TextStyle(fontSize: 22,fontWeight: FontWeight.w600,color: Color(0xFF424242),height: 1.5,)),
@@ -278,7 +290,6 @@ class AoNhatBinh extends StatelessWidget{
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
                           style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
-
                           children:const <TextSpan>[
                             TextSpan(text:'      - Cấp cung tần nhị giai:'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -288,6 +299,7 @@ class AoNhatBinh extends StatelessWidget{
                           ]
                       )
                   ),
+                  // kjklà
                   const SizedBox(height:20),
                   const Text('      Các phụ kiện đi kèm bộ trang phục dành cho cung tần nhị giai là 1 chiếc mũ Ngũ phượng Kim ước phát, 10 cây trâm hoa. '
                     ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF424242),height: 1.5,),textAlign: TextAlign.justify,),
@@ -295,7 +307,7 @@ class AoNhatBinh extends StatelessWidget{
                   RichText(textAlign:TextAlign.justify,
                       text: TextSpan(
                           style:DefaultTextStyle.of(context).style.copyWith(decoration: TextDecoration.none),
-
+//fdfd
                           children:const <TextSpan>[
                             TextSpan(text:'      - Cấp cung tần tam giai:'
                                 ,style:TextStyle(fontSize: 16,fontWeight: FontWeight.w800,
@@ -574,10 +586,10 @@ class AoNhatBinh extends StatelessWidget{
                     ],
                   ),
                 ],
-              ),
-            ),
-            // =============================================111=======================================================
-          NoiDungLienQuan(),
+              ), //Nội dung
+                          ),
+                  //Nội dung lien quan
+                  NoiDungLienQuan(),
           ],
         ),
       ),
@@ -588,53 +600,12 @@ class AoNhatBinh extends StatelessWidget{
         ),
           ],
         ),
+      // tạo nút nổi có chức năng chuyển trang web lên đầu trang
       floatingActionButton:
+      // thiết kế và tạo chức năng cho nút
       buildFloatingActionButton(_scrollController),
     );
   }
 }
 
 
-class LichSuAoDai1 extends  StatefulWidget  {
-  @override
-  State<StatefulWidget> createState() => _LichSuAoDai();
-}
-class _LichSuAoDai extends State<LichSuAoDai1> {
-  late YoutubePlayerController _controller;
-  @override
-  void initState() {
-    super.initState();
-    _controller = YoutubePlayerController(
-      params: const YoutubePlayerParams(
-          showControls: true,
-          mute: false,
-          showFullscreenButton: true,
-          loop: false,
-          strictRelatedVideos: true,
-          enableJavaScript: true,
-          color: 'red'),
-    );
-    _controller.loadVideo('https://www.youtube.com/watch?v=LEs2CWT9jVU');
-    _controller.stopVideo();
-  }
-  @override
-  void dispose() {
-    _controller.close();
-    super.dispose();
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-          height: 480,
-          width: 850,
-          color: Colors.deepPurpleAccent,
-          padding: const EdgeInsets.all(2),
-          child: YoutubePlayer(
-            controller: _controller,
-          )
-      ),
-    );
-  }
-
-}
